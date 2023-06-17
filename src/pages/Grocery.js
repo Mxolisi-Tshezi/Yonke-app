@@ -2,12 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Stores() {
-  // const [goToContact, setGoToContact] = React.useState(false);
-
-  // if (goToContact) {
-  //   return <Navigate to="/contact" />;
-  // }
-
   return (
     <div>
       <div className="navbar">

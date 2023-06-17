@@ -27,13 +27,20 @@ function Home() {
           <img src="/assets/Images/yonkelogo.png" alt="Logo" />
         </div>
 
+        <div className="user-profile">
+          <span className="greeting">Hi, user</span>
+          <i className="fa fa-user"></i>
+        </div>
+
         <div className="links">
           <Link to="/marketplace">Buy Products</Link>
-          <a href="#">Buy Services</a>
-          <a href="#">Buy Grocery</a>
+          <Link to="/services">Buy Services</Link>
+          <Link to="/Grocery">Buy Grocery</Link>
 
+          {/* <a href="#">Buy Grocery</a> */}
           <a href="#">Track My Order</a>
-          <a href="#">Sign in / Register</a>
+          <Link to="/login">Sign in / Register</Link>
+
           <a href="#" className="register-link">
             Register your Business
           </a>
@@ -41,7 +48,7 @@ function Home() {
       </div>
 
       {/* Header hero*/}
-      
+
       <header className="hero">
         <div className="hero-content">
           <h1>Yonke, The Online Marketplace for all Goods and Services</h1>
@@ -103,143 +110,142 @@ function Home() {
 
       <h2>Top Selling Services and Products</h2>
 
-<div className="TopSelling-card-box">
-  <div className="TopSelling-grid-container">
-    <div className="TopSelling-grid-item">
-      <img
-        src="/assets/Images/Mofaya.jpeg"
-        alt="Product image"
-        className="icon"
-      />
-      <div className="TopSelling-text">Samsung Digital Watch</div>
-      <div className="TopSelling-provider-text">
-        Sold by: Smart Electronics
-      </div>
-    </div>
+      <div className="TopSelling-card-box">
+        <div className="TopSelling-grid-container">
+          <div className="TopSelling-grid-item">
+            <img
+              src="/assets/Images/Mofaya.jpeg"
+              alt="Product image"
+              className="icon"
+            />
+            <div className="TopSelling-text">Samsung Digital Watch</div>
+            <div className="TopSelling-provider-text">
+              Sold by: Smart Electronics
+            </div>
+          </div>
 
-    <div className="TopSelling-grid-item">
-      <img
-        src="/assets/Images/images.png"
-        alt="Service image"
-        className="icon"
-      />
-      <div className="TopSelling-text">Plumbing services</div>
-      <div className="TopSelling-provider-text">
-        Sold by: Smart Rhino Plumbers
-      </div>
-    </div>
+          <div className="TopSelling-grid-item">
+            <img
+              src="/assets/Images/images.png"
+              alt="Service image"
+              className="icon"
+            />
+            <div className="TopSelling-text">Plumbing services</div>
+            <div className="TopSelling-provider-text">
+              Sold by: Smart Rhino Plumbers
+            </div>
+          </div>
 
-    <div className="TopSelling-grid-item">
-      <img
-        src="/assets/Images/yini-le.jpg"
-        alt="Product image"
-        className="icon"
-      />
-      <div className="opSelling-text">yini-le </div>
-      <div className="TopSelling-provider-text">Sold by: Glamourous</div>
-    </div>
+          <div className="TopSelling-grid-item">
+            <img
+              src="/assets/Images/yini-le.jpg"
+              alt="Product image"
+              className="icon"
+            />
+            <div className="opSelling-text">yini-le </div>
+            <div className="TopSelling-provider-text">Sold by: Glamourous</div>
+          </div>
 
-    <div className="TopSelling-grid-item">
-      <img
-        src="/assets/Images/attorneys.jpeg"
-        alt="Service image"
-        className="icon"
-      />
-      <div className="TopSelling-text">Legal services</div>
-      <div className="TopSelling-provider-text">
-        Sold by: MJ Nyanga Attorneys
-      </div>
-    </div>
+          <div className="TopSelling-grid-item">
+            <img
+              src="/assets/Images/attorneys.jpeg"
+              alt="Service image"
+              className="icon"
+            />
+            <div className="TopSelling-text">Legal services</div>
+            <div className="TopSelling-provider-text">
+              Sold by: MJ Nyanga Attorneys
+            </div>
+          </div>
 
-    <div className="TopSelling-grid-item">
-      <img
-        src="/assets/Images/salon.png"
-        alt="Service image"
-        className="icon"
-      />
-      <div className="TopSelling-text">Hair Salon</div>
-      <div className="TopSelling-provider-text">
-        Sold by: Zodwa's Hair Salon
-      </div>
-    </div>
+          <div className="TopSelling-grid-item">
+            <img
+              src="/assets/Images/salon.png"
+              alt="Service image"
+              className="icon"
+            />
+            <div className="TopSelling-text">Hair Salon</div>
+            <div className="TopSelling-provider-text">
+              Sold by: Zodwa's Hair Salon
+            </div>
+          </div>
 
-    <div className="TopSelling-grid-item">
-      <img
-        src="/assets/Images/Mofaya.jpeg"
-        alt="Product image"
-        className="icon"
-      />
-      <div className="TopSelling-text">Mofaya Energy Drink</div>
-      <div className="TopSelling-provider-text">Sold by: Mofaya </div>
-    </div>
-    <div className="TopSelling-grid-item">
-      <img
-        src="/assets/Images/digitalwatch.jpg"
-        alt="Product image"
-        className="icon"
-      />
-      <div className="TopSelling-text">Samsung Digital Watch</div>
-      <div className="TopSelling-provider-text">
-        Sold by: Smart Electronics
-      </div>
-    </div>
-    <div className="TopSelling-grid-item">
-      <img
-        src="/assets/Images/wiseman.jpeg"
-        alt="Product image"
-        className="icon"
-      />
-      <div className="TopSelling-text">Elecrician services</div>
-      <div className="TopSelling-provider-text">
-        Sold by: Senzo Elecricals{" "}
-      </div>
-    </div>
-    <div className="TopSelling-grid-item">
-      <img
-        src="/assets/Images/nailtech.jpeg"
-        alt="Product image"
-        className="icon"
-      />
-      <div className="TopSelling-text">Nail Tech services</div>
-      <div className="TopSelling-provider-text">
-        Sold by: Fufu Beauty Spar
-      </div>
-    </div>
-    <div className="TopSelling-grid-item">
-      <img
-        src="/assets/Images/prime.jpeg"
-        alt="Product image"
-        className="icon"
-      />
-      <div className="TopSelling-text">Prime Energy Drink</div>
-      <div className="TopSelling-provider-text">Sold by: Checkers </div>
-    </div>
+          <div className="TopSelling-grid-item">
+            <img
+              src="/assets/Images/Mofaya.jpeg"
+              alt="Product image"
+              className="icon"
+            />
+            <div className="TopSelling-text">Mofaya Energy Drink</div>
+            <div className="TopSelling-provider-text">Sold by: Mofaya </div>
+          </div>
+          <div className="TopSelling-grid-item">
+            <img
+              src="/assets/Images/digitalwatch.jpg"
+              alt="Product image"
+              className="icon"
+            />
+            <div className="TopSelling-text">Samsung Digital Watch</div>
+            <div className="TopSelling-provider-text">
+              Sold by: Smart Electronics
+            </div>
+          </div>
+          <div className="TopSelling-grid-item">
+            <img
+              src="/assets/Images/wiseman.jpeg"
+              alt="Product image"
+              className="icon"
+            />
+            <div className="TopSelling-text">Elecrician services</div>
+            <div className="TopSelling-provider-text">
+              Sold by: Senzo Elecricals{" "}
+            </div>
+          </div>
+          <div className="TopSelling-grid-item">
+            <img
+              src="/assets/Images/nailtech.jpeg"
+              alt="Product image"
+              className="icon"
+            />
+            <div className="TopSelling-text">Nail Tech services</div>
+            <div className="TopSelling-provider-text">
+              Sold by: Fufu Beauty Spar
+            </div>
+          </div>
+          <div className="TopSelling-grid-item">
+            <img
+              src="/assets/Images/prime.jpeg"
+              alt="Product image"
+              className="icon"
+            />
+            <div className="TopSelling-text">Prime Energy Drink</div>
+            <div className="TopSelling-provider-text">Sold by: Checkers </div>
+          </div>
 
-    <div className="TopSelling-grid-item">
-      <img
-        src="/assets/Images/wiseman.jpeg"
-        alt="Product image"
-        className="icon"
-      />
-      <div className="TopSelling-text">Elecrician services</div>
-      <div className="TopSelling-provider-text">
-        Sold by: Senzo Elecricals{" "}
+          <div className="TopSelling-grid-item">
+            <img
+              src="/assets/Images/wiseman.jpeg"
+              alt="Product image"
+              className="icon"
+            />
+            <div className="TopSelling-text">Elecrician services</div>
+            <div className="TopSelling-provider-text">
+              Sold by: Senzo Elecricals{" "}
+            </div>
+          </div>
+          <div className="TopSelling-grid-item">
+            <img
+              src="../Images/digitalwatch.jpg"
+              alt="Product image"
+              className="icon"
+            />
+            <div className="TopSelling-text">Samsung Digital Watch</div>
+            <div className="TopSelling-provider-text">
+              Sold by: Smart Electronics
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div className="TopSelling-grid-item">
-      <img
-        src="../Images/digitalwatch.jpg"
-        alt="Product image"
-        className="icon"
-      />
-      <div className="TopSelling-text">Samsung Digital Watch</div>
-      <div className="TopSelling-provider-text">
-        Sold by: Smart Electronics
-      </div>
-    </div>
-  </div>
-</div>
-      
 
       {/* footer section */}
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function About() {
+function Marketplace() {
   // const [goToContact, setGoToContact] = React.useState(false);
 
   // if (goToContact) {
@@ -223,4 +223,4 @@ function About() {
   );
 }
 
-export default About;
+export default Marketplace;

@@ -1,4 +1,18 @@
 /*nav bar*/
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.greeting {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.fa-user {
+  font-size: 20px;
+}
 
 .navbar {
   display: flex;
