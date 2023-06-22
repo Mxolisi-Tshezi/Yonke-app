@@ -1,0 +1,212 @@
+header {
+    background-color: #f3bc44;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  header nav a {
+    color: black;
+  }
+  
+  .header-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header-content p {
+    font-size: 2rem;
+  }  
+
+
+  .Marketplace-product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+  }
+  
+  .Marketplace-product-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .Marketplace-product-list li:hover {
+    transform: translateY(-10px);
+  }
+  
+  .Marketplace-product-list li img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .Marketplace-product-list li h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .Marketplace-product-list li p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .Marketplace-product-list li span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f3bc44;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .Marketplace-product-list li button {
+    background-color: #f3bc44;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .Marketplace-product-list li button:hover {
+    background-color: black;
+    color: #f3bc44;
+  }
+
+  /* Nav Bar */
+
+
+  .links a {
+    text-decoration: none;
+    /* color: #333; */
+    margin-right: 16px;
+  }
+  
+  .cart-link {
+    position: relative;
+  }
+  
+  .cart-link .fa-shopping-cart {
+    font-size: 24px;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Header css */
+
+  .Marketplaceheader-header {
+    /* background-image: url('../public/assets/Images/amasi.jpeg'); */
+    background-image: url('../css/CustomImages/camera.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    align-items: center;
+  }
+
+  
+  .Marketplaceheader-header-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #f3bc44;
+  }
+  
+  .Marketplaceheader-header-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  .Marketplaceheader-header-content p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+  }
+  
+  .Marketplaceheader-header-content button {
+    padding: 1em 2em;
+    background-color: #f3bc44;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .Marketplaceheader-header-content button:hover {
+    background-color:  #f3bc44;
+  }
+  /* .featured-products {
+    display: flex;
+    justify-content: flex-start;
+  } */
+  
+  /* filtering */
+  .filtering-navbar {
+    box-shadow: 0 2px 4px brown;
+  }
+
+  .filtering-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #303030;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .filtering-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    /* border: 2px solid #f7b731; */
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .filtering-links a:hover {
+    color: #f7b731;
+    background-color: #fff;
+  }
