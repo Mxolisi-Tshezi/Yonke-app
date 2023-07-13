@@ -55,7 +55,7 @@ function Marketplace() {
           <a href="#">Shop Health</a>
           <a href="#">Shop Office equipment</a>
           <a href="#">Shop Sport</a>
-          <a href="#">Shop Grocery</a>
+          <Link to = "/Grocery">Shop Grocery</Link>
         </div>
       </div>
 

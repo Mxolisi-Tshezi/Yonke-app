@@ -35,7 +35,7 @@ function Home() {
         <div className="links">
           <Link to="/marketplace">Buy Products</Link>
           <Link to="/services">Buy Services</Link>
-          <Link to="/Grocery">Buy Grocery</Link>
+          <Link to="/grocery">Buy Grocery</Link>
 
           {/* <a href="#">Buy Grocery</a> */}
           <a href="#">Track My Order</a>
