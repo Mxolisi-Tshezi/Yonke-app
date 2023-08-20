@@ -6,7 +6,7 @@ export const baseUrl = () =>
     ? process.env.BASE_URL
     : process.env.NODE_ENV !== 'production'
     ? 'http://localhost:3000'
-    : 'https://yourdomain.com';
+    : 'https://yonke.com';
 
 export const generateToken = (user) => {
   return jwt.sign(
@@ -26,7 +26,7 @@ export const generateToken = (user) => {
 export const isAuth = (req, res, next) => {
   const authorization = req.headers.authorization;
   if (authorization) {
-    const token = authorization.slice(7, authorization.length); // Bearer XXXXXX
+    const token = authorization.slice(7, authorization.length);
     jwt.verify(token, process.env.JWT_SECRET, (err, decode) => {
       if (err) {
         res.status(401).send({ message: 'Invalid Token' });
@@ -55,11 +55,11 @@ export const mailgun = () =>
   });
 
 export const payOrderEmailTemplate = (order) => {
-  return `<h1>Thanks for shopping with us</h1>
+  return `<h1>Thank you for shopping with Yonke</h1>
   <p>
-  Hi ${order.user.name},</p>
+  Hola ${order.user.name},</p>
   <p>We have finished processing your order.</p>
-  <h2>[Order ${order._id}] (${order.createdAt.toString().substring(0, 10)})</h2>
+  <h3>[Order No: ${order._id}] (${order.createdAt.toString().substring(0, 10)})</h3>
   <table>
   <thead>
   <tr>
@@ -74,7 +74,7 @@ export const payOrderEmailTemplate = (order) => {
     <tr>
     <td>${item.name}</td>
     <td align="center">${item.quantity}</td>
-    <td align="right"> $${item.price.toFixed(2)}</td>
+    <td align="right"> R${item.price.toFixed(2)}</td>
     </tr>
   `
     )
@@ -83,15 +83,15 @@ export const payOrderEmailTemplate = (order) => {
   <tfoot>
   <tr>
   <td colspan="2">Items Price:</td>
-  <td align="right"> $${order.itemsPrice.toFixed(2)}</td>
+  <td align="right"> R${order.itemsPrice.toFixed(2)}</td>
   </tr>
   <tr>
   <td colspan="2">Shipping Price:</td>
-  <td align="right"> $${order.shippingPrice.toFixed(2)}</td>
+  <td align="right"> R${order.shippingPrice.toFixed(2)}</td>
   </tr>
   <tr>
   <td colspan="2"><strong>Total Price:</strong></td>
-  <td align="right"><strong> $${order.totalPrice.toFixed(2)}</strong></td>
+  <td align="right"><strong> R${order.totalPrice.toFixed(2)}</strong></td>
   </tr>
   <tr>
   <td colspan="2">Payment Method:</td>
@@ -99,7 +99,7 @@ export const payOrderEmailTemplate = (order) => {
   </tr>
   </table>
 
-  <h2>Shipping address</h2>
+  <h2>Delivery Details</h2>
   <p>
   ${order.shippingAddress.fullName},<br/>
   ${order.shippingAddress.address},<br/>
@@ -109,7 +109,10 @@ export const payOrderEmailTemplate = (order) => {
   </p>
   <hr/>
   <p>
-  Thanks for shopping with us.
+  Your Order will be delivered soon ,in the mean time please track your order here trackmyorder.yonke.co.za
+  </p>
+  <p>
+  DANKO
   </p>
   `;
 };

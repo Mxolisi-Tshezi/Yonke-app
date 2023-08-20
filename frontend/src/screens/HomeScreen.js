@@ -11,6 +11,9 @@ import '../custom.css';
 import { FaSearch } from 'react-icons/fa';
 import Container from 'react-bootstrap/Container';
 import SearchBox from '../components/SearchBox';
+// import NavigationBar from './components/NavigationBar'; // Import the NavigationBar component
+import NavigationBar from '../components/NavigationBar';
+
 
 import {
   FaCalendarAlt,
