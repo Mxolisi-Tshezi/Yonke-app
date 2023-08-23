@@ -115,16 +115,94 @@ function App() {
           {/* <Container className="mt-3"> */}
           <Routes>
             <Route path="/product/:slug" element={<ProductScreen />} />
-            <Route path="/cart" element={<CartScreen />} />
+            {/* <Route path="/cart" element={<CartScreen />} /> */}
             <Route path="/search" element={<SearchScreen />} />
-            <Route path="/signin" element={<SigninScreen />} />
-            <Route path="/signup" element={<SignupScreen />} />
-            <Route path="/forget-password" element={<ForgetPasswordScreen />} />
             <Route
+              path="/cart"
+              element={
+                <>
+                  <NavigationBar
+                    sidebarIsOpen={sidebarIsOpen}
+                    setSidebarIsOpen={setSidebarIsOpen}
+                    cart={cart}
+                    userInfo={userInfo}
+                    signoutHandler={signoutHandler}
+                  />
+                  <CartScreen />
+                </>
+              }
+            />
+            {/* <Route path="/signin" element={<SigninScreen />} /> */}
+
+            <Route
+              path="/signin"
+              element={
+                <>
+                  <NavigationBar
+                    sidebarIsOpen={sidebarIsOpen}
+                    setSidebarIsOpen={setSidebarIsOpen}
+                    cart={cart}
+                    userInfo={userInfo}
+                    signoutHandler={signoutHandler}
+                  />
+                  <SigninScreen />
+                </>
+              }
+            />
+            {/* <Route path="/signup" element={<SignupScreen />} /> */}
+
+
+            <Route
+              path="/signup"
+              element={
+                <>
+                  <NavigationBar
+                    sidebarIsOpen={sidebarIsOpen}
+                    setSidebarIsOpen={setSidebarIsOpen}
+                    cart={cart}
+                    userInfo={userInfo}
+                    signoutHandler={signoutHandler}
+                  />
+                  <SignupScreen />
+                </>
+              }
+            />
+            {/* <Route path="/forget-password" element={<ForgetPasswordScreen />} /> */}
+            <Route
+              path="/forget-password"
+              element={
+                <>
+                  <NavigationBar
+                    sidebarIsOpen={sidebarIsOpen}
+                    setSidebarIsOpen={setSidebarIsOpen}
+                    cart={cart}
+                    userInfo={userInfo}
+                    signoutHandler={signoutHandler}
+                  />
+                  <ForgetPasswordScreen />
+                </>
+              }
+            />
+            
+            {/* <Route
               path="/reset-password/:token"
               element={<ResetPasswordScreen />}
+            /> */}
+            <Route
+              path="/reset-password/:token"
+              element={
+                <>
+                  <NavigationBar
+                    sidebarIsOpen={sidebarIsOpen}
+                    setSidebarIsOpen={setSidebarIsOpen}
+                    cart={cart}
+                    userInfo={userInfo}
+                    signoutHandler={signoutHandler}
+                  />
+                  <ResetPasswordScreen />
+                </>
+              }
             />
-
             <Route
               path="/profile"
               element={
@@ -238,7 +316,7 @@ function App() {
                     userInfo={userInfo}
                     signoutHandler={signoutHandler}
                   />
-                  <MarketPlaceScreen/>
+                  <MarketPlaceScreen />
                 </>
               }
             />
