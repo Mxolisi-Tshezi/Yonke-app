@@ -230,7 +230,22 @@ function App() {
                 </ProtectedRoute>
               }
             />
-            <Route path="/placeorder" element={<PlaceOrderScreen />} />
+            {/* <Route path="/placeorder" element={<PlaceOrderScreen />} /> */}
+            <Route
+              path="/placeorder"
+              element={
+                <>
+                  <NavigationBar
+                    sidebarIsOpen={sidebarIsOpen}
+                    setSidebarIsOpen={setSidebarIsOpen}
+                    cart={cart}
+                    userInfo={userInfo}
+                    signoutHandler={signoutHandler}
+                  />
+                  <PlaceOrderScreen />
+                </>
+              }
+            />
             <Route
               path="/order/:id"
               element={
@@ -247,8 +262,38 @@ function App() {
                 </ProtectedRoute>
               }
             ></Route>
-            <Route path="/shipping" element={<ShippingAddressScreen />}></Route>
-            <Route path="/payment" element={<PaymentMethodScreen />}></Route>
+            {/* <Route path="/shipping" element={<ShippingAddressScreen />}></Route> */}
+            <Route
+              path="/shipping"
+              element={
+                <>
+                  <NavigationBar
+                    sidebarIsOpen={sidebarIsOpen}
+                    setSidebarIsOpen={setSidebarIsOpen}
+                    cart={cart}
+                    userInfo={userInfo}
+                    signoutHandler={signoutHandler}
+                  />
+                  <ShippingAddressScreen />
+                </>
+              }
+            />
+            {/* <Route path="/payment" element={<PaymentMethodScreen />}></Route> */}
+            <Route
+              path="/payment"
+              element={
+                <>
+                  <NavigationBar
+                    sidebarIsOpen={sidebarIsOpen}
+                    setSidebarIsOpen={setSidebarIsOpen}
+                    cart={cart}
+                    userInfo={userInfo}
+                    signoutHandler={signoutHandler}
+                  />
+                  <PaymentMethodScreen />
+                </>
+              }
+            />
             {/* Admin Routes */}
             <Route
               path="/admin/dashboard"
