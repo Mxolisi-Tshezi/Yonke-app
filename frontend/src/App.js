@@ -203,14 +203,25 @@ function App() {
                 </>
               }
             />
+            
             <Route
               path="/profile"
               element={
+                <>
+                  <NavigationBar
+                    sidebarIsOpen={sidebarIsOpen}
+                    setSidebarIsOpen={setSidebarIsOpen}
+                    cart={cart}
+                    userInfo={userInfo}
+                    signoutHandler={signoutHandler}
+                  />
                 <ProtectedRoute>
                   <ProfileScreen />
                 </ProtectedRoute>
+                </>
               }
             />
+
             <Route
               path="/map"
               element={
