@@ -37,7 +37,7 @@ const NavigationBar = ({ sidebarIsOpen, setSidebarIsOpen, cart, userInfo, signou
             <Link className="nav-link" to="/MarketPlaceScreen">
               Buy Products
             </Link>
-            <Link className="nav-link" to="#">
+            <Link className="nav-link" to="/ServicesScreen">
               Buy Services
             </Link>
             <Link className="nav-link" to="/#">

@@ -39,6 +39,8 @@ import ResetPasswordScreen from './screens/ResetPasswordScreen';
 import MarketPlaceScreen from './screens/MarketPlaceScreen';
 import NavigationBar from './components/NavigationBar';
 import MarketplaceNavigationBar from './components/MarketplaceNavigationBar';
+import ServicesScreen from './screens/ServicesScreen';
+
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -303,8 +305,21 @@ function App() {
               }
             />
             {/* <Route path="/" element={   <HomeScreen />} /> */}
-            {/* <Route path="MarketPlaceScreen" element={<MarketPlaceScreen />} /> */}
-
+            <Route
+              path="ServicesScreen"
+              element={
+                <>
+                  <MarketplaceNavigationBar
+                    sidebarIsOpen={sidebarIsOpen}
+                    setSidebarIsOpen={setSidebarIsOpen}
+                    cart={cart}
+                    userInfo={userInfo}
+                    signoutHandler={signoutHandler}
+                  />
+                  <ServicesScreen />
+                </>
+              }
+            />
             <Route
               path="MarketPlaceScreen"
               element={
