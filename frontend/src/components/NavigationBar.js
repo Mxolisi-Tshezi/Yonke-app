@@ -40,14 +40,14 @@ const NavigationBar = ({ sidebarIsOpen, setSidebarIsOpen, cart, userInfo, signou
             <Link className="nav-link" to="/ServicesScreen">
               Buy Services
             </Link>
-            <Link className="nav-link" to="/#">
+            <Link className="nav-link" to="/ServicesScreen">
               Buy Grocery
             </Link>
 
-            <Link className="nav-link" to="#">
+            <Link className="nav-link" to="/TrackOrderScreen">
               Track My Order
             </Link>
-            <Link className="nav-link" to="#">
+            <Link className="nav-link" to="/ServicesScreen">
               Sell here
             </Link>
             <Link to="/cart" className="nav-link">

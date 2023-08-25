@@ -40,6 +40,7 @@ import MarketPlaceScreen from './screens/MarketPlaceScreen';
 import NavigationBar from './components/NavigationBar';
 import MarketplaceNavigationBar from './components/MarketplaceNavigationBar';
 import ServicesScreen from './screens/ServicesScreen';
+import TrackOrderScreen from './screens/TrackOrderScreen';
 
 
 function App() {
@@ -153,7 +154,6 @@ function App() {
             />
             {/* <Route path="/signup" element={<SignupScreen />} /> */}
 
-
             <Route
               path="/signup"
               element={
@@ -185,7 +185,7 @@ function App() {
                 </>
               }
             />
-            
+
             {/* <Route
               path="/reset-password/:token"
               element={<ResetPasswordScreen />}
@@ -205,7 +205,7 @@ function App() {
                 </>
               }
             />
-            
+
             <Route
               path="/profile"
               element={
@@ -217,9 +217,9 @@ function App() {
                     userInfo={userInfo}
                     signoutHandler={signoutHandler}
                   />
-                <ProtectedRoute>
-                  <ProfileScreen />
-                </ProtectedRoute>
+                  <ProtectedRoute>
+                    <ProfileScreen />
+                  </ProtectedRoute>
                 </>
               }
             />
@@ -256,6 +256,22 @@ function App() {
                 </ProtectedRoute>
               }
             ></Route>
+
+            {/* <Route
+              path="TrackOrderScreen"
+              element={
+                <>
+                  <NavigationBar
+                    sidebarIsOpen={sidebarIsOpen}
+                    setSidebarIsOpen={setSidebarIsOpen}
+                    cart={cart}
+                    userInfo={userInfo}
+                    signoutHandler={signoutHandler}
+                  />
+                  <TrackOrderScreen />
+                </>
+              }
+            /> */}
             <Route
               path="/orderhistory"
               element={
@@ -360,12 +376,28 @@ function App() {
                 </>
               }
             />
-            {/* <Route path="/" element={   <HomeScreen />} /> */}
+            {/* <Route path="TrackOrderScreen" element={   <TrackOrderScreen />} /> */}
+
+            <Route
+              path="TrackOrderScreen"
+              element={
+                <>
+                  <NavigationBar
+                    sidebarIsOpen={sidebarIsOpen}
+                    setSidebarIsOpen={setSidebarIsOpen}
+                    cart={cart}
+                    userInfo={userInfo}
+                    signoutHandler={signoutHandler}
+                  />
+                  <TrackOrderScreen />
+                </>
+              }
+            />
             <Route
               path="ServicesScreen"
               element={
                 <>
-                  <MarketplaceNavigationBar
+                  <NavigationBar
                     sidebarIsOpen={sidebarIsOpen}
                     setSidebarIsOpen={setSidebarIsOpen}
                     cart={cart}
