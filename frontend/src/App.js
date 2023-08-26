@@ -378,7 +378,7 @@ function App() {
               }
             />
             {/* <Route path="/" element={   <HomeScreen />} /> */}
-            <Route path="GroceryScreen" element={<GroceryScreenScreen />} />
+            <Route path="GroceryScreen" element={<GroceryScreen />} />
 
             <Route
               path="TrackOrderScreen"

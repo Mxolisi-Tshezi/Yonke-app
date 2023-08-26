@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../css/GroceryScreen.css" 
+import { Link } from "react-router-dom"
+import "./GroceryScreen.css"
 
 function Grocery() {
     return (
