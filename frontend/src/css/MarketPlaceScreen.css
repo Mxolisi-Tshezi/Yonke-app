@@ -216,3 +216,9 @@ header nav a {
   color: #f7b731;
   background-color: #fff;
 }
+
+@media (max-width: 1400px) {
+  .filtering-links {
+    display: none;
+  }
+}

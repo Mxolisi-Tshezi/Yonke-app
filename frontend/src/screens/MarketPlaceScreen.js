@@ -114,7 +114,7 @@ function MarketPlaceScreen() {
             data-placement="bottom"
             title="Get your groceries delivered to your doorstep"
           >
-            <i className="fas fa-shopping-basket"></i> Shop Grocery
+            <i className="fas fa-shopping-basket"></i> Shop Food
           </a>
           <a
             href="#"
@@ -154,7 +154,7 @@ function MarketPlaceScreen() {
       <header class="Marketplaceheader-header">
         <div class="Marketplaceheader-header-content">
           <h1>Friday Special</h1>
-          <p>Browse our selection of high-quality Camers</p>
+          <p>Browse our selection of high-quality Cameras</p>
           <button>Shop now</button>
         </div>
       </header>
