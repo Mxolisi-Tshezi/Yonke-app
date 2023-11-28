@@ -1,7 +1,7 @@
 {
-  "name": "amazona",
+  "name": "yonke",
   "version": "1.0.0",
-  "description": "# Lessons",
+  "description": "# cicd",
   "main": "index.js",
   "scripts": {
     "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
@@ -10,12 +10,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/basir/mern-amazona.git"
   },
-  "author": "",
+  "author": "Mxolisi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/basir/mern-amazona/issues"
   },
-  "homepage": "https://github.com/basir/mern-amazona#readme"
 }
