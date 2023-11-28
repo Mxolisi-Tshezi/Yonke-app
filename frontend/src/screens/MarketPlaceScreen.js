@@ -6,7 +6,7 @@ import Product from '../components/Product';
 import { Helmet } from 'react-helmet-async';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
-import "../css/MarketPlaceScreen.css"
+import '../css/MarketPlaceScreen.css';
 // import data from '../data';
 import '../custom.css';
 import { FaSearch } from 'react-icons/fa';
@@ -66,17 +66,90 @@ function MarketPlaceScreen() {
       <Helmet>
         <title>Yonke</title>
       </Helmet>
-      {/* <div className="filtering-navbar">
+      <div className="filtering-navbar">
         <div className="filtering-links">
-          <a href="#">Shop Fashion</a>
-          <a href="#">Shop Electronics</a>
-          <a href="#">Shop Beauty</a>
-          <a href="#">Shop Health</a>
-          <a href="#">Shop Office equipment</a>
-          <a href="#">Shop Sport</a>
-          <a href="#">Shop Grocery</a>
+          <a
+            href="#"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Explore the latest fashion"
+          >
+            <i className="fas fa-tshirt"></i> Shop Fashion
+          </a>
+          <a
+            href="#"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Discover cutting-edge electronics"
+          >
+            <i className="fas fa-laptop"></i> Shop Electronics
+          </a>
+          <a
+            href="#"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Take care of your health with our products"
+          >
+            <i className="fas fa-medkit"></i> Shop Health
+          </a>
+          <a
+            href="#"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Equip your office with the best tools"
+          >
+            <i className="fas fa-laptop"></i> Shop Office Equipment
+          </a>
+          <a
+            href="#"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Stay active and fit with our sports gear"
+          >
+            <i className="fas fa-dumbbell"></i> Shop Sport
+          </a>
+          <a
+            href="#"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Get your groceries delivered to your doorstep"
+          >
+            <i className="fas fa-shopping-basket"></i> Shop Grocery
+          </a>
+          <a
+            href="#"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Enhance your home with stylish decor"
+          >
+            <i className="fas fa-home"></i> Shop Home Decor
+          </a>
+          <a
+            href="#"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Explore the world of books and literature"
+          >
+            <i className="fas fa-book"></i> Shop Books
+          </a>
+          <a
+            href="#"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Upgrade your gaming experience with the latest releases"
+          >
+            <i className="fas fa-gamepad"></i> Shop Gaming
+          </a>
+          <a
+            href="#"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Discover unique and handmade crafts"
+          >
+            <i className="fas fa-hand-holding-heart"></i> Shop Handmade
+          </a>
         </div>
-      </div> */}
+      </div>
 
       <header class="Marketplaceheader-header">
         <div class="Marketplaceheader-header-content">
