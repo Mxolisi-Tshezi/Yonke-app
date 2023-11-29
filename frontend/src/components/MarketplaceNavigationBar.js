@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import { LinkContainer } from 'react-router-bootstrap';
 import Button from 'react-bootstrap/Button';
-
+import SearchBoxMarketPlace from './SearchBoxMarketPlace';
 const MarketplaceNavigationBar = ({
   sidebarIsOpen,
   setSidebarIsOpen,
@@ -28,14 +28,11 @@ const MarketplaceNavigationBar = ({
 
           <LinkContainer to="/">
             <Navbar.Brand> Yonke</Navbar.Brand>
-            {/* <Navbar.Brand><div className="logo">
-    <img src="../yonkelogo.png" alt="Logo" />
-  </div></Navbar.Brand> */}
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto  w-100  justify-content-end">
-              {/* <SearchBox /> */}
+              <SearchBoxMarketPlace />
 
               <Link className="nav-link" to="/#">
                 Home
